@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BentoHealthy</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" type="text/css" href="style index.css">
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header class="header">
+
+    <img src="image/logo.png" class="logo">
+   
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about us.html">About</a>
+        <a href="menu.html">Menu</a>
+        <a href="contact us.html">Contact Us</a>
+    </nav>
+
+
+    <div class="icons">
+        <i class="fas fa-search" id="search-btn"></i>
+        <a href="#" class="fas fa-shopping-cart"></a>
+    </div>
+
+    <form action="" class="search-form">
+        <input type="search" id="search-box" placeholder="search here...">
+        <label for="search-box" class="fas fa-search"></label>
+    </form>
+    
+</header>
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <div class="row">
+
+        <div class="content">
+            <h3>choice your right food</h3>
+            <a href="#" class="btn">Buy one now</a>
+        </div>
+
+        <div class="image">
+            <img src="image/bento.png" class="main-home-image" alt="bento">
+        </div>
+
+    </div>
+
+</section>
+
+<!-- home section ends -->
+
+<!-- about section starts  -->
+
+<section class="about" id="about">
+
+    <h1 class="heading"> about us <span>Why Choose Us</span> </h1>    
+
+    <div class="row">
+
+        <div class="content">
+            <h3 class="title">What's Make Our Bento Special?</h3> 
+        
+            <p style="text-align: justify;">BentoHealthy is a food business that highlights the healthy eating style based on the diet of the "suku-suku separuh" as recommended by the Ministry of Health Malaysia.
+                Adopting nutritiously-balanced style into a single-serving, packed meal with the emphasis on the fresh, low-fat and calorie ingredients, our bento definitely the best option to fulfill your satisfaction.
+                Our brand also provide various bento types to suit the taste and preferences of a wide range of customers....<p>
+            
+            <a href="about us.html" class="btn">Read more</a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- about section ends -->
+
+<!-- videos section starts  -->
+
+<section class="video" id="video">
+
+    <h1 class="heading"> videos <span>Know Us Better</span> </h1>
+
+    <div class="video-container">
+        
+        <div class="video">
+            <video src="video/video 1.mp4" muted></video>
+        </div>
+        
+        <div class="video">
+            <video src="video/video 2.mp4" muted></video>
+        </div>
+        
+        <div class="video">
+            <video src="video/video 3.mp4" muted></video>
+        </div>
+        
+        <div class="video">
+            <video src="video/video 4.mp4" muted></video>
+        </div>
+        
+        </div>
+        
+        <script>
+            var video = document.querySelectorAll('video')
+            video.forEach(play => play.addEventListener('click', () =>{
+        
+                play.classList.toggle('active');
+            
+                if(play.paused){
+                  play.play();
+                }else{
+                    play.pause();
+                    play.currentTime = 0;
+        
+                }
+            
+            }));
+        </script>
+            
+        
+    </div>
+ 
+</section>
+
+<!-- videos section ends -->
+
+<!-- review section starts  -->
+
+<section class="review" id="review">
+
+    <h1 class="heading"> reviews <span>What People Says</span> </h1>
+
+    <div class="wrapper">
+
+        <!-------------Review cards------------------>
+        <div class="cards">
+            <div class="card">
+                <img src="image/pic-1.png">
+                <p>This is the best bento I've ever taste in my life! I'm so glad I ordered this.</p>
+                <h4>Tom Cruise</h4>
+                <h4>Social worker</h4>
+                <i class="fa fa-quote-left"></i>
+            </div>
+
+            <div class="card">
+                <img src="image/pic-2.png">
+                <p>No words can describe how much I love this. Healthy and tasty.</p>
+                <h4>Laura Jane</h4>
+                <h4>Photographer</h4>
+                <i class="fa fa-quote-left"></i>
+            </div>
+
+            <div class="card">
+                <img src="image/pic-3.png">
+                <p>Thoughtful presentation leads to a more enjoyable meal. Thank you! </p>
+                <h4>Jamie Bond</h4>
+                <h4>Entrepreneur</h4>
+                <i class="fa fa-quote-left"></i>
+            </div>
+
+
+
+        </div>
+    </div>
+   
+
+</section>
+
+<!-- review section ends -->
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+    <div class="share">
+        <a href="https://www.facebook.com/Bentohealthy-enterprise-108862865039178/" target="_blank" class="fab fa-facebook-f"></a>
+        <a href="https://instagram.com/bentohealthy.my?utm_medium=copy_link" target="_blank" class="fab fa-instagram"></a>
+        <a href="http://wa.me/601156565741" target="_blank" class="fab fa-whatsapp"></a>
+    </div>
+
+    <div class="links">
+        <a href="index.html">Home</a>
+        <a href="about us.html">About</a>
+        <a href="menu.html">Menu</a>
+        <a href="contact us.html">Contact Us</a>
+    </div>
+
+    <div class="credit"> &copy; 2022 BentoHealthy | All Rights Reserved</div>
+
+</section>
+
+<!-- footer section ends -->
+
+</body>
+</html>
